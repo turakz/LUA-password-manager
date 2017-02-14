@@ -9,7 +9,8 @@ fromFile = function()
     inFile = io.open("input.txt", r)
 
     if inFile == nil then
-        io.stderr:write("Error, file not found")
+        io.stderr:write("Error, file not found\n")
+        os.exit()
     end
 
     --let's make this file default input
