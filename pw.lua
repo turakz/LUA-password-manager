@@ -36,6 +36,7 @@ end
 --let's grab our command line argument-key and get its value
 if (#arg < 1) then
     io.stderr:write("Error - missing CML argument\n\tUsage: lua pw.lua <accountType>\n")
+    os.exit()
 else
     account = arg[1]
 end
